@@ -21,8 +21,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: ./apps/dokploy/
-          file: ./Dockerfile
+          context: .
+          file: ./apps/dokploy/Dockerfile
           push: true
           tags: |
             kptlronyttcna/dokploy-server:raymand
