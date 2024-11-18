@@ -28,7 +28,7 @@ export const ShowGitProviders = () => {
 
 		const scope = "api read_user read_repository";
 
-		const authUrl = `https://gitlab.com/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${encodeURIComponent(scope)}`;
+		const authUrl = `https://gitlab.raymand.net/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${encodeURIComponent(scope)}`;
 
 		return authUrl;
 	};

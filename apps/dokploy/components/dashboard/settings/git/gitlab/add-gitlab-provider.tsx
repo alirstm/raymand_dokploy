@@ -129,7 +129,7 @@ export const AddGitlabProvider = () => {
 									<li className="flex flex-row gap-2 items-center">
 										Go to your GitLab profile settings{" "}
 										<Link
-											href="https://gitlab.com/-/profile/applications"
+											href="https://gitlab.raymand.net/-/profile/applications"
 											target="_blank"
 										>
 											<ExternalLink className="w-fit text-primary size-4" />

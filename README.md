@@ -1,1 +1,1 @@
-Just to change gitlab.com to gitlab.raymand.net
+Just to change gitlab.raymand.net to gitlab.raymand.net
