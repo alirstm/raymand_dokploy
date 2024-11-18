@@ -5,7 +5,7 @@ on:
     branches: ["raymand"]
 
 jobs:
-  build-and-push-server-image:
+  build-and-push-raymand-image:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
+      
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile.server
+          file: ./Dockerfile.cloud
           push: true
           tags: |
             kptlronyttcna/dokploy-server:raymand
-          platforms: linux/amd64  
+          platforms: linux/amd64
